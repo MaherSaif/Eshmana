@@ -1,0 +1,46 @@
+<ul id="featured-list">
+  {{#featured_right}}
+  <li class="color-yellowish grid_6">
+    {{#value}}
+    <div class="featured-list-item">
+      <h2 class="featured-list-word">{{word}}</h2>
+      <blockquote class="featured-list-meaning" cite=""><p>{{meaning}}</p></blockquote>
+      {{#tweet-data}}
+      <div class="featured-list-contributed-by">
+        <a href="http://twitter.com/#!/{{from_user}}/status/{{id_str}}"><img src="{{profile_image_url}}" width="32" height="32" alt="@{{from_user}}" />ساهم بها <span dir="ltr">@{{from_user}}</span></a>
+      </div>
+      {{/tweet-data}}
+      <div class="featured-list-share">
+        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                src="http://platform.twitter.com/widgets/tweet_button.html?count=none&amp;text={{word}}:%20{{meaning}}&amp;url=http://www.eshmana.com/word/{{_id}}&amp;related=eshmana"
+                class="tweet-button"></iframe>
+        <a href="/word/{{_id}}" class="button"><i></i><span>رابط ثابت</span></a>
+      </div>
+    </div>
+    {{/value}}
+  </li>
+  {{/featured_right}}
+  <div></div>
+  {{#featured_left}}
+  <li class="color-bluewish grid_6">
+    {{#value}}
+    <div class="featured-list-item">
+      <h2 class="featured-list-word">{{word}}</h2>
+      <blockquote class="featured-list-meaning" cite=""><p>{{meaning}}</p></blockquote>
+      {{#tweet-data}}
+      <div class="featured-list-contributed-by">
+        <a href="http://twitter.com/#!/{{from_user}}/status/{{id_str}}"><img src="{{profile_image_url}}" width="32" height="32" alt="@{{from_user}}" />ساهم بها <span dir="ltr">@{{from_user}}</span></a>
+      </div>
+      {{/tweet-data}}
+      <div class="featured-list-share">
+        <iframe allowtransparency="true" frameborder="0" scrolling="no"
+                src="http://platform.twitter.com/widgets/tweet_button.html?count=none&amp;text={{word}}:%20{{meaning}}&amp;url=http://www.eshmana.com/word/{{_id}}&amp;related=eshmana"
+                class="tweet-button"></iframe>
+        <a href="/word/{{_id}}" class="button"><i></i><span>رابط ثابت</span></a>
+      </div>
+    </div>
+    {{/value}}
+  </li>
+  {{/featured_left}}
+</ul>
+<div class="clear"></div>

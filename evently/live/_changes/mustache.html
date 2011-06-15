@@ -1,0 +1,15 @@
+{{#items}}
+{{#value}}
+<div class="stream-item">
+  <h2 class="stream-item-word">{{word}}</h2>
+  <blockquote class="stream-item-meaning" cite=""><p>{{meaning}}</p></blockquote>
+  {{#tweet-data}}
+  {{#user}}
+  <div class="stream-item-contributed-by">
+    <a href="http://twitter.com/#!/{{screen_name}}/status/{{tweet_id_str}}"><img src="{{profile_image_url}}" width="32" height="32" alt="@{{screen_name}}" />ساهم بها <span dir="ltr">@{{screen_name}}</span></a>
+  </div>
+  {{/user}}
+  {{/tweet-data}}
+</div>
+{{/value}}
+{{/items}}

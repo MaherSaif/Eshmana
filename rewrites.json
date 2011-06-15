@@ -1,0 +1,38 @@
+[
+  {
+    "from" : "",
+    "to" : "index.html"
+  },
+  {
+    "from" : "about",
+    "to" : "_show/about"
+  },
+  {
+    "from": "word/*",
+    "to": "_show/word/*"
+  },
+  {
+      "from" : "css/*",
+      "to" : "css/*"
+  },
+  {
+      "from" : "style/*",
+      "to" : "style/*"
+  },
+  {
+      "from" : "js/*",
+      "to" : "js/*"
+  },
+  {
+      "from" : "img/*",
+      "to" : "img/*"
+  },
+  {
+      "from" : "vendor/*",
+      "to" : "vendor/*"
+  },
+  {
+    "from" : "eshmana/*",
+    "to" : "../../*"
+  }
+]

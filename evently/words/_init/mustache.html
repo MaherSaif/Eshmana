@@ -1,0 +1,12 @@
+<ul class="terms-list">
+  {{#items}}
+  <li>
+    <h3 class="letter-header" rel="{{letter}}">{{letter}}</h3>
+    <ul class="letter-terms">
+      {{#terms}}
+      <li class="letter-terms-item"><a href="#{{word}}" data-id="{{_id}}" class="letter-terms-item-link">{{word}}</a></li>
+      {{/terms}}
+    </ul>
+  </li>
+  {{/items}}
+</ul>
