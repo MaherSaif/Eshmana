@@ -25,10 +25,10 @@ The `.couchapprc` file should have contents like this:
     {
       "env" : {
         "public" : {
-          "db" : "http://name:pass@mycouch.couchone.com/mydatabase"
+          "db" : "http://name:pass@mycouch.couchone.com/eshmanadatabase"
         },
         "default" : {
-          "db" : "http://name:pass@localhost:5984/mydatabase"
+          "db" : "http://name:pass@localhost:5984/eshmanadatabase"
         }
       }
     }
