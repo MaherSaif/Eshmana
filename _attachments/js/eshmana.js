@@ -22,7 +22,7 @@ $.extend($.eshmana, {
                 $.eshmana.stopShuffling();
                 var on = ($('#shuffle').hasClass('turn-on')) ? true : false;
                 if (!on) {
-                    this.app.db.view('Eshmana/definitions',
+                    this.app.db.view('Eshmana/random-definitions?limit=100',
                     {
                         success : function(data) {
                             $.eshmana.startShuffling(data);
@@ -123,9 +123,9 @@ $.extend($.eshmana, {
             <a href="http://twitter.com/#!/' + definition['tweet-data'].from_user + '/status/' + definition['tweet-data'].id_str + '"><img src="' + definition['tweet-data'].profile_image_url + '" width="32" height="32" alt="@' + definition['tweet-data'].from_user + '" />ساهم بها <span dir="ltr">' + definition['tweet-data'].from_user + '</span></a> \
           </div> \
           <div class="stream-item-share"> \
-            <iframe allowtransparency="true" frameborder="0" scrolling="no" \
-                    src="http://platform.twitter.com/widgets/tweet_button.html?count=none&amp;text=' + definition.word + ':%20' + definition.meaning + '&amp;url=http://www.eshmana.com/word/' + definition._id + '&amp;related=eshmana" \
-                    class="tweet-button"></iframe> \
+          <iframe allowtransparency="true" frameborder="0" scrolling="no" \
+                  src="http://platform.twitter.com/widgets/tweet_button.html?count=none&amp;text=' + definition.word + ':%20' + definition.meaning + '&amp;url=http://www.eshmana.com/word/' + definition._id + '&amp;related=eshmana" \
+                  class="tweet-button"></iframe> \
             <a href="/word/' + definition._id + '" class="button"><i></i><span>رابط ثابت</span></a> \
           </div> \
         </div>';
