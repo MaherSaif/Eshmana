@@ -1,5 +1,4 @@
 function(data) {
-    //$.log(data)
     var items = [];
     for (var i = 0; i < data.rows.length; i++) {
         var found = false;
